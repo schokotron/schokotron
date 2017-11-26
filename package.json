@@ -1,0 +1,19 @@
+{
+  "name": "schokotron",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "author": "David Beermann <mail@davidbeermann.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "yarn run test -- --watch"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
