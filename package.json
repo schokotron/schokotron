@@ -10,7 +10,9 @@
     "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
+    "express": "^4.16.2",
     "ramda": "^0.25.0",
+    "socket.io": "^2.0.4",
     "twit": "^2.2.9"
   },
   "devDependencies": {
