@@ -13,8 +13,9 @@
     "cp:socket:map":
       "cp ./node_modules/socket.io-client/dist/socket.io.js.map ./public/vendor",
     "mkdir:vendor": "mkdir -p ./public/vendor",
-    "prerelease":
-      "yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map"
+    "prestart":
+      "yarn install && yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map",
+    "start": "./run"
   },
   "dependencies": {
     "express": "^4.16.2",
