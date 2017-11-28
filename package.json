@@ -7,7 +7,14 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "jest",
-    "test:watch": "yarn run test -- --watch"
+    "test:watch": "yarn run test -- --watch",
+    "cp:socket":
+      "cp ./node_modules/socket.io-client/dist/socket.io.js ./public/vendor",
+    "cp:socket:map":
+      "cp ./node_modules/socket.io-client/dist/socket.io.js.map ./public/vendor",
+    "mkdir:vendor": "mkdir -p ./public/vendor",
+    "prerelease":
+      "yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map"
   },
   "dependencies": {
     "express": "^4.16.2",
