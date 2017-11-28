@@ -1,0 +1,12 @@
+body {
+  background-color: #000000;
+}
+
+p {
+  color: #ffffff;
+}
+
+/*https://stackoverflow.com/questions/18270894/html5-video-does-not-hide-controls-in-fullscreen-mode-in-chrome#19493459*/
+video::-webkit-media-controls {
+  display: none !important;
+}
