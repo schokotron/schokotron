@@ -68,7 +68,17 @@ var keydownHandler = function(event) {
 
 var socketHandler = function(data) {
   console.log(data)
-  playRandomVideo()
+  switch (data.action) {
+    case 'access':
+      playAccessVideo()
+      break
+    case 'random':
+      playRandomVideo()
+      break
+    default:
+      console.log('unknown socket action')
+      break
+  }
 }
 
 document.addEventListener('keydown', keydownHandler)
