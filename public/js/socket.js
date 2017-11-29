@@ -66,7 +66,7 @@ var keydownHandler = function(event) {
   }
 }
 
-var socketHandler = function(data) {
+var socketVideoHandler = function(data) {
   console.log(data)
   switch (data.action) {
     case 'access':
@@ -84,4 +84,4 @@ var socketHandler = function(data) {
 document.addEventListener('keydown', keydownHandler)
 
 var socket = io('http://localhost:3000')
-socket.on('news', socketHandler)
+socket.on('video', socketVideoHandler)
