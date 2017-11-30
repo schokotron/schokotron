@@ -2,3 +2,4 @@
 node_modules
 run
 public/vendor/*
+.env
