@@ -8,16 +8,14 @@
   "scripts": {
     "test": "jest",
     "test:watch": "yarn run test -- --watch",
-    "cp:socket":
-      "cp ./node_modules/socket.io-client/dist/socket.io.js ./public/vendor",
-    "cp:socket:map":
-      "cp ./node_modules/socket.io-client/dist/socket.io.js.map ./public/vendor",
+    "cp:socket": "cp ./node_modules/socket.io-client/dist/socket.io.js ./public/vendor",
+    "cp:socket:map": "cp ./node_modules/socket.io-client/dist/socket.io.js.map ./public/vendor",
     "mkdir:vendor": "mkdir -p ./public/vendor",
-    "prestart":
-      "yarn install && yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map",
+    "prestart": "yarn install && yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map",
     "start": "./run"
   },
   "dependencies": {
+    "detect-rpi": "^1.2.0",
     "express": "^4.16.2",
     "ramda": "^0.25.0",
     "rpio": "^0.9.19",
