@@ -12,7 +12,8 @@
     "cp:socket:map": "cp ./node_modules/socket.io-client/dist/socket.io.js.map ./public/vendor",
     "mkdir:vendor": "mkdir -p ./public/vendor",
     "prestart": "yarn install && yarn run mkdir:vendor && yarn run cp:socket && yarn run cp:socket:map",
-    "start": "./run"
+    "start": "./run",
+    "prettier": "prettier --write \"./**/*.js\""
   },
   "dependencies": {
     "detect-rpi": "^1.2.0",
@@ -23,6 +24,7 @@
     "twit": "^2.2.9"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "prettier": "^1.10.2"
   }
 }

@@ -1,0 +1,71 @@
+# Prettier configuration
+# https://prettier.io/docs/en/options.html
+# ------------------------------------------------------------------
+
+# Specify the line length that the printer will wrap on. DEFAULT: 80
+printWidth: 90
+
+# Specify the number of spaces per indentation-level. DEFAULT: 2
+tabWidth: 2
+
+# Indent lines with tabs instead of spaces. DEFAULT: false
+useTabs: false
+
+# Print semicolons at the ends of statements. DEFAULT: true
+semi: false
+
+# Use single quotes instead of double quotes. DEFAULT: false
+singleQuote: true
+
+# Print trailing commas wherever possible when multi-line.
+# (A single-line array, for example, never gets trailing commas.)
+# DEFAULT: "none"
+trailingComma: "es5"
+
+# Print spaces between brackets in object literals. DEFAULT: true
+bracketSpacing: true
+
+# Put the > of a multi-line JSX element at the end of the last line
+# instead of being alone on the next line (does not apply to self
+# closing elements). DEFAULT: false
+jsxBracketSameLine: false
+
+# Include parentheses around a sole arrow function parameter.
+# DEFAULT: "avoid"
+arrowParens: "avoid"
+
+# Format only a segment of a file.
+# These two options can be used to format code starting and ending
+# at a given character offset (inclusive and exclusive, respectively).
+# DEFAULT: 0
+rangeStart: 0
+# DEFAULT: Infinity
+# rangeEnd: Infinity
+
+# Specify which parser to use.
+# Both the babylon and flow parsers support the same set of JavaScript
+# features (including Flow). Prettier automatically infers the parser
+# from the input file path, so you shouldn't have to change this setting.
+# DEFAULT: "babylon"
+parser: "babylon"
+
+# Specify the input filepath. This will be used to do parser inference.
+# DEFAULT: "none"
+filepath: "none"
+
+# Prettier can restrict itself to only format files that contain a special
+# comment, called a pragma, at the top of the file. This is very useful
+# when gradually transitioning large, unformatted codebases to prettier.
+# DEFAULT: false
+requirePragma: false
+
+# Prettier can insert a special @format marker at the top of files specifying
+# that the file has been formatted with prettier. This works well when used
+# in tandem with the --require-pragma option. DEFAULT: false
+insertPragma: false
+
+# By default, Prettier will wrap markdown text as-is since some services use
+# a linebreak-sensitive renderer, e.g. GitHub comment and BitBucket. In some
+# cases you may want to rely on editor/viewer soft wrapping instead, so this
+# option allows you to opt out with "never". DEFAULT: "preserve"
+proseWrap: "preserve"
