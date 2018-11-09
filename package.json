@@ -20,13 +20,14 @@
     "express": "^4.16.4",
     "ramda": "^0.25.0",
     "rpio": "^0.9.23",
-    "socket.io": "^2.0.4",
-    "twit": "^2.2.9"
+    "socket.io": "^2.1.1",
+    "twit": "^2.2.9",
+    "sshpk": "^1.15.2"
   },
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^21.2.1",
     "prettier": "^1.15.1"
