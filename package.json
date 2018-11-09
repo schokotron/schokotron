@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "detect-rpi": "^1.2.0",
-    "express": "^4.16.2",
+    "express": "^4.16.4",
     "ramda": "^0.25.0",
-    "rpio": "^0.9.19",
+    "rpio": "^0.9.23",
     "socket.io": "^2.0.4",
     "twit": "^2.2.9"
   },
@@ -29,6 +29,6 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^21.2.1",
-    "prettier": "^1.10.2"
+    "prettier": "^1.15.1"
   }
 }
