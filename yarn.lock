@@ -390,7 +390,7 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
-bindings@*:
+bindings@~1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.3.1.tgz#21fc7c6d67c18516ec5aaa2815b145ff77b26ea5"
 
@@ -2405,7 +2405,7 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
-nan@*, nan@^2.9.2:
+nan@^2.9.2, nan@~2.11.0:
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.1.tgz#90e22bccb8ca57ea4cd37cc83d3819b52eea6766"
 
@@ -3018,12 +3018,12 @@ rimraf@^2.6.1, rimraf@~2.6.2:
   dependencies:
     glob "^7.0.5"
 
-rpio@^0.9.23:
-  version "0.9.23"
-  resolved "https://registry.yarnpkg.com/rpio/-/rpio-0.9.23.tgz#2eef05e57471eafa4f0cc8472fca50541d554702"
+rpio@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/rpio/-/rpio-1.0.11.tgz#eacff4a530da1b8e730ac32d4a6b4e8f15308a38"
   dependencies:
-    bindings "*"
-    nan "*"
+    bindings "~1.3.0"
+    nan "~2.11.0"
 
 rsvp@^3.3.3:
   version "3.6.2"
