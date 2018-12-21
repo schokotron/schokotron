@@ -22,7 +22,7 @@
     "rpio": "^1.0.11",
     "socket.io": "^2.1.1",
     "twit": "^2.2.9",
-    "sshpk": "^1.15.2"
+    "sshpk": "^1.16.0"
   },
   "devDependencies": {
     "eslint": "^5.10.0",
