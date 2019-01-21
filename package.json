@@ -30,6 +30,6 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^21.2.1",
-    "prettier": "^1.15.1"
+    "prettier": "^1.16.0"
   }
 }
