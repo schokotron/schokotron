@@ -1,9 +1,10 @@
 const { getRandomIntervalDelays } = require('./helper/env')
 const { minutesToMilliseconds } = require('./helper/time')
 const { getTweetSenderHandle, getTweetText } = require('./helper/tweet')
-const initTwitter = require('./twitter')
+const { initTwitter } = require('./twitter')
 const startServer = require('./server')
 const gpio = require('./gpio')
+const {loadGist} = require('./github')
 const handleTweet = require('./twitter/handler/tweetHandler')
 const { isStatusConfirmed } = require('./twitter/status')
 
@@ -108,6 +109,10 @@ const run = () => {
     .then(inst => {
       twitter = inst
       server = startServer()
+
+      const gist = loadGist()
+      gist.then((text: string) => console.log(text))
+
       gpio.init()
       startRandomInterval()
       startExternalSensorCheck()

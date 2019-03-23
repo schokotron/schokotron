@@ -16,15 +16,20 @@
     "prettier": "prettier --write \"./**/*.js\""
   },
   "dependencies": {
-    "detect-rpi": "^1.2.0",
+    "@octokit/graphql": "^2.0.2",
+    "@types/express": "^4.16.1",
     "express": "^4.16.4",
     "ramda": "^0.26.1",
     "rpio": "^1.0.13",
     "socket.io": "^2.1.1",
-    "twit": "^2.2.9",
-    "sshpk": "^1.16.1"
+    "sshpk": "^1.16.1",
+    "twit": "^2.2.9"
   },
   "devDependencies": {
+    "@types/node": "^11.11.6",
+    "@types/ramda": "^0.26.4",
+    "@types/rpio": "^0.0.2",
+    "@types/twit": "^2.2.21",
     "eslint": "^5.14.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.14.0",

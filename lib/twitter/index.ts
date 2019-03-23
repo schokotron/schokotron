@@ -1,12 +1,12 @@
-const Twit = require('twit')
-const env = require('../helper/env')
-const { getScreenNames } = require('./parse/friends-list')
+import Twit from 'twit';
+import { getConsumerKey, getConsumerSecret, getAccessToken, getAccessTokenSecret } from '../helper/env';
+import { getScreenNames } from './parse/friends-list';
 
 const config = {
-  consumer_key: env.getConsumerKey(),
-  consumer_secret: env.getConsumerSecret(),
-  access_token: env.getAccessToken(),
-  access_token_secret: env.getAccessTokenSecret(),
+  consumer_key: getConsumerKey(),
+  consumer_secret: getConsumerSecret(),
+  access_token: getAccessToken(),
+  access_token_secret: getAccessTokenSecret(),
   timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
 }
 
@@ -55,6 +55,7 @@ const sendTweet = T => (msg, replyId = undefined) => {
 
 const initTwitter = (followCallback, tweetCallback) => {
   if (isValidConfig()) {
+    return Promise.resolve("nothing")
     const T = new Twit(config)
 
     const stream = T.stream('user')
@@ -72,4 +73,4 @@ const initTwitter = (followCallback, tweetCallback) => {
   }
 }
 
-module.exports = initTwitter
+export { initTwitter }

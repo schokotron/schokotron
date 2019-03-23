@@ -3,3 +3,4 @@ node_modules
 public/vendor/*
 .env
 yarn-error.log
+dist
