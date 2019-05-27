@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "detect-rpi": "^1.2.0",
-    "express": "^4.17.0",
+    "express": "^4.17.1",
     "ramda": "^0.26.1",
     "rpio": "^1.0.13",
     "socket.io": "^2.1.1",
